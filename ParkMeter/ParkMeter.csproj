@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AD6DA9E-842B-4EBD-9075-9E92B6A2EADF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ParkMeter</RootNamespace>
+    <AssemblyName>ParkMeter</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinDispenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoinDispenseForm.Designer.cs">
+      <DependentUpon>CoinDispenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoinPaymentForm.Designer.cs">
+      <DependentUpon>CoinPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmRefundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmRefundForm.Designer.cs">
+      <DependentUpon>ConfirmRefundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePayment.Designer.cs">
+      <DependentUpon>MachinePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParkingTicketForm.Designer.cs">
+      <DependentUpon>ParkingTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs" />
+    <Compile Include="HomeScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreenForm.Designer.cs">
+      <DependentUpon>HomeScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertTicketForm.Designer.cs">
+      <DependentUpon>InsertTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyTimeForm.Designer.cs">
+      <DependentUpon>ModifyTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintTicketForm.Designer.cs">
+      <DependentUpon>PrintTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnTicketForm.Designer.cs">
+      <DependentUpon>ReturnTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.cs" />
+    <Compile Include="Time.cs" />
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinDispenseForm.resx">
+      <DependentUpon>CoinDispenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinPaymentForm.resx">
+      <DependentUpon>CoinPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmRefundForm.resx">
+      <DependentUpon>ConfirmRefundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreenForm.resx">
+      <DependentUpon>HomeScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertTicketForm.resx">
+      <DependentUpon>InsertTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinePayment.resx">
+      <DependentUpon>MachinePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyTimeForm.resx">
+      <DependentUpon>ModifyTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingTicketForm.resx">
+      <DependentUpon>ParkingTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordForm.resx">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintTicketForm.resx">
+      <DependentUpon>PrintTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReturnTicketForm.resx">
+      <DependentUpon>ReturnTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
